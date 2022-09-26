@@ -1,0 +1,128 @@
+* {
+  direction: ltr;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #e6e6e6;
+}
+.Container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+  flex-wrap: wrap;
+}
+.Wrap-Login {
+  width: 600px;
+  overflow: hidden;
+  border-radius: 30px;
+  background: #e6e6e6;
+  box-shadow: 10px 10px 22px rgba(0, 0, 0, 0.2),
+    -10px -10px 22px rgba(255, 255, 255, 0.75);
+  padding: 30px;
+}
+.bank-container,
+.deposit,
+.withdraw {
+  border-radius: 20px;
+  background: #e6e6e6;
+  box-shadow: 10px 10px 22px rgba(0, 0, 0, 0.2),
+    -10px -10px 22px rgba(255, 255, 255, 0.75);
+  padding: 50px;
+}
+.deposit-section,
+.withdraw-section,
+.balance-section {
+  border-radius: 20px;
+  box-shadow: inset 5px 5px 11px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 11px rgba(255, 255, 255, 0.75);
+  color: #464646;
+}
+
+form h1 {
+  text-align: center;
+  color: #314e85;
+  padding-bottom: 45px;
+}
+form {
+  width: 100%;
+}
+.Wrap-Input {
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+}
+.Wrap-Input i {
+  color: #a3a3a3;
+  right: 91%;
+  font-size: 20px;
+  position: absolute;
+  top: 37px;
+  padding: 10px 10px;
+}
+.fa-eye {
+  left: 86%;
+}
+.Pass-Input {
+  margin-bottom: 35px;
+}
+.Input:focus::placeholder {
+  transition: all 0.3s;
+  color: transparent;
+}
+.Input-Label {
+  margin-left: 20px;
+}
+form .Input {
+  transition: all 0.6s;
+  margin-top: 10px;
+}
+form .Input,
+input {
+  color: #464646;
+  padding: 0 7px 0 43px;
+  font-size: 16px;
+  height: 50px;
+  display: block;
+  width: 100%;
+  outline: none;
+  border: none;
+  background: transparent;
+  border-radius: 20px;
+  box-shadow: inset 5px 5px 11px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 11px rgba(255, 255, 255, 0.75);
+}
+
+::placeholder {
+  color: #a3a3a3;
+  opacity: 1; /* Firefox */
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #a3a3a3;
+}
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #a3a3a3;
+}
+.button {
+  border-radius: 25px;
+  border: none;
+  background-color: #e6e6e6;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  height: 45px;
+  transition: all 0.4s;
+  box-shadow: 10px 10px 22px rgba(0, 0, 0, 0.2),
+    -10px -10px 22px rgba(255, 255, 255, 0.75);
+}
+.button:active {
+  box-shadow: inset 5px 5px 11px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 11px rgba(255, 255, 255, 0.75);
+}

@@ -42,6 +42,7 @@ document.getElementById("withdraw-btn").addEventListener("click", function () {
   const newWithdraw = parseFloat(getNewWithdraw.value);
 
   getNewWithdraw.value = "";
+
   if (isNaN(newWithdraw)) {
     Swal.fire({
       icon: "error",
@@ -54,6 +55,14 @@ document.getElementById("withdraw-btn").addEventListener("click", function () {
       title: "enter some amount",
     });
     return;
+  } else if (newWithdraw > 0) {
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "withdraw Successful",
+      showConfirmButton: false,
+      timer: 1000,
+    });
   }
   const getPreviousWithdraw = document.getElementById("withdraw");
   const previousWithdraw = parseFloat(getPreviousWithdraw.innerText);

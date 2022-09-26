@@ -32,7 +32,6 @@ body {
   background: #e6e6e6;
   box-shadow: 10px 10px 22px rgba(0, 0, 0, 0.2),
     -10px -10px 22px rgba(255, 255, 255, 0.75);
-  padding: 50px;
 }
 .deposit-section,
 .withdraw-section,
